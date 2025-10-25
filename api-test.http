@@ -1,0 +1,47 @@
+GET /status HTTP/1.1
+Host: localhost:3000
+Accept: application/json
+Content-Type: application/json
+
+
+###
+POST /todos HTTP/1.1
+Host: localhost:3000
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Play Golf",
+  "completed": false
+}
+
+
+###
+GET /todos HTTP/1.1
+Host: localhost:3000
+Accept: application/json
+Content-Type: application/json
+
+
+###
+GET /todos/1 HTTP/1.1
+Host: localhost:3000
+Accept: application/json
+Content-Type: application/json
+
+###
+PUT /todos/1 HTTP/1.1
+Host: localhost:3000
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Play Golf",
+  "completed": true
+}
+
+###
+DELETE /todos/1 HTTP/1.1
+Host: localhost:3000
+Accept: application/json
+Content-Type: application/json
